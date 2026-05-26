@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "tfstateRG" {
-  name     = "tfstate_rg"
+  name     = "tfstaterg"
   location = "Central India"
 }
 

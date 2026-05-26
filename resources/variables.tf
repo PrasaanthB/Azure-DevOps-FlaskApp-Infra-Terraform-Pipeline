@@ -1,7 +1,7 @@
 variable "resource_group_name" {
     description = "Name of the Resource Group to be created"
     type        = string
-    default     = "flaskapp_rg"
+    default     = "flaskapprg"
   
 }
 
@@ -15,7 +15,7 @@ variable "location" {
 variable "aks_name" {
     description = "Name of the AKS Cluster to be created"
     type        = string
-    default     = "flaskapp_aks_cluster"
+    default     = "flaskappakscluster"
   
 }
 
