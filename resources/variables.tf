@@ -29,7 +29,7 @@ variable "node_count" {
 variable "node_size" {
     description = "Size of the nodes in the AKS Cluster"
     type        = string
-    default     = "Standard_D2ads_v6"
+    default     = "Standard_D2as_v6"
   
 }
 
