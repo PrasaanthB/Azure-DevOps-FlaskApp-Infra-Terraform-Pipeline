@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "tfstateRG" {
 }
 
 resource "azurerm_storage_account" "tfstateSA" {
-  name                     = "tfstate_sa"
+  name                     = "tfstatesa214"
   resource_group_name      = azurerm_resource_group.tfstateRG.name
   location                 = azurerm_resource_group.tfstateRG.location
   account_tier             = "Standard"
@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "tfstateSA" {
 }
 
 resource "azurerm_storage_container" "tfstateBLOB" {
-    name                  = "tfstate_blob_container"
+    name                  = "tfstateblobcontainer214"
     storage_account_id  = azurerm_storage_account.tfstateSA.id
     container_access_type = "private"
   
