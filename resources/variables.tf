@@ -1,4 +1,4 @@
-variable "resource_grp_name" {
+variable "resource_group_name" {
     description = "Name of the Resource Group to be created"
     type        = string
     default     = "flaskapp_rg"
@@ -22,7 +22,7 @@ variable "aks_name" {
 variable "node_count" {
     description = "Number of nodes in the AKS Cluster"
     type        = number
-    default     = 3
+    default     = 2 
   
 }
 
@@ -30,5 +30,12 @@ variable "node_size" {
     description = "Size of the nodes in the AKS Cluster"
     type        = string
     default     = "Standard_D2ads_v6"
+  
+}
+
+variable "acr_name" {
+    description = "Name of the Azure Container Registry to be created"
+    type        = string
+    default     = "flaskapp_acr"
   
 }
