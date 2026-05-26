@@ -16,6 +16,7 @@ steps:
     scriptLocation: 'inlineScript'
     inlineScript: |
       cd $(System.DefaultWorkingDirectory)/bootstrap
+        terraform init
         terraform fmt -recursive
         terraform validate
         terraform plan -out=tfplan
