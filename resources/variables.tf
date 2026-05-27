@@ -36,6 +36,6 @@ variable "node_size" {
 variable "acr_name" {
     description = "Name of the Azure Container Registry to be created"
     type        = string
-    default     = "flaskappacr"
+    default     = "prasaanthflaskappacr"
   
 }
