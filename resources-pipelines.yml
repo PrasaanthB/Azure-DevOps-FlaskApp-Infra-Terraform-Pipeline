@@ -36,7 +36,7 @@ steps:
     provider: azurerm
     command: validate
     workingDirectory: $(System.DefaultWorkingDirectory)/resources
-    environmentServiceNameAzureRM: ARM-service-Connection
+    environmentServiceNameAzureRM: ARM-service-connection
 
 - task: TerraformTask@5
   displayName: Terraform Plan
@@ -44,8 +44,7 @@ steps:
     provider: azurerm
     command: plan
     workingDirectory: $(System.DefaultWorkingDirectory)/resources
-    environmentServiceNameAzureRM: ARM-service-Connection
-    commandOptions: '-out=tfplan'
+    environmentServiceNameAzureRM: ARM-service-connection
 
 - task: TerraformTask@5
   displayName: Terraform Apply
@@ -53,5 +52,5 @@ steps:
     provider: azurerm
     command: apply
     workingDirectory: $(System.DefaultWorkingDirectory)/resources
-    environmentServiceNameAzureRM: ARM-service-Connection
-    commandOptions: 'tfplan -auto-approve'
+    environmentServiceNameAzureRM: ARM-service-connection
+    commandOptions: '-auto-approve'
