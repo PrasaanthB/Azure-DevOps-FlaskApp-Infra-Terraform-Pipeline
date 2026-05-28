@@ -2,7 +2,7 @@
 
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-purple) ![Azure](https://img.shields.io/badge/Azure-Cloud-blue) ![AKS](https://img.shields.io/badge/AKS-Provisioned-brightgreen) ![ACR](https://img.shields.io/badge/ACR-Provisioned-brightgreen) ![Pipeline](https://img.shields.io/badge/Pipeline-Passing-brightgreen) ![Backend](https://img.shields.io/badge/State-Azure%20Blob-blue)
 
-Infrastructure as Code (IaC) project that **automatically provisions** the entire Azure infrastructure required for the [Flask DevOps Pipeline](https://github.com/prasaanthb2141/Azure-DevOps-Flask-Pipeline) project — using **Terraform** and **Azure DevOps Pipelines**.
+Infrastructure as Code (IaC) project that **automatically provisions** the entire Azure infrastructure required for the [Azure-DevOps-FlaskApp-Pipeline](https://github.com/PrasaanthB/Azure-DevOps-FlaskApp-Pipeline) project — using **Terraform** and **Azure DevOps Pipelines**.
 
 > 📝 Two pipelines work together: `bootstrap-pipelines.yml` creates the remote state backend first, then `resources-pipelines.yml` provisions AKS and ACR using that backend.
 
@@ -264,7 +264,7 @@ az acr list --output table
 
 This infra repo works together with the app deployment repo:
 
-👉 **[Azure-DevOps-Flask-Pipeline](https://github.com/prasaanthb2141/Azure-DevOps-Flask-Pipeline)** — CI/CD pipeline that deploys the Flask app onto the AKS cluster provisioned here.
+👉 **[Azure-DevOps-FlaskApp-Pipeline](https://github.com/PrasaanthB/Azure-DevOps-FlaskApp-Pipeline)** — CI/CD pipeline that deploys the Flask app onto the AKS cluster provisioned here.
 
 ---
 
